@@ -5,7 +5,7 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 
-body {
+/* body {
     margin-left: 5px;
 }
 
@@ -23,22 +23,105 @@ body {
 .content{
     margin-left: 5px;
     font-weight: 400;
+} */
+
+* {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-
 /* Home Page css */
 body.home {
     background-color: rgb(209, 229, 209);
 }
 
-.home .container{
-    background-color:rgb(196, 221, 196);
-    border-color: darkgreen;
+.home .recipe-card {
+    width: 1200px;
+    background-color: #FFFAFA;
+    margin: 20px auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    border: 2px solid darkgreen; 
 }
 
-.home .title, .home .content{
+.home img{
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.home .title{ 
     color: darkgreen;
 }
+
+.home ul {
+    list-style: none;
+}
+
+.home .recipe-content{
+    display: inline-block;
+    width: 580px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.home h1 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.home h2{
+    margin-bottom: 40px;
+}
+
+.home li {
+    margin-top: 30px;
+}
+
+.home a {
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 10px;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+}
+
+#bloody-link{
+    background: linear-gradient(to bottom, red, darkred);
+    
+  }
+  
+#roll-link {
+    background: linear-gradient(to bottom, lightgreen, darkgreen);
+  }
+
+#shrimp-link{
+    background: linear-gradient(to bottom, rgb(246, 198, 138), darkorange);
+}
+
+.home a:hover,
+.home a:focus {
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* .recipe-content * {
+    margin-top:20px;
+} */
+
+
+/* .home .recipe_card{
+    background-color:rgb(196, 221, 196);
+    border-color: darkgreen;
+} */
+
+/* .home .title, .home .content{
+    color: darkgreen;
+} */
 
 /* Bloody Mary css */
 body.bloody{
