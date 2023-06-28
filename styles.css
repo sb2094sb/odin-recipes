@@ -49,7 +49,12 @@ body.bloody{
     background-color: rgb(237, 181, 181);
     border-color: darkred;
 }
-.bloody .title, .bloody .content{
+
+.bloody .title{
+    color: darkgreen;
+}
+
+.bloody .content{
     color:darkred;
 }
 
