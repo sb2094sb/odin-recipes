@@ -109,37 +109,47 @@ body.home {
   transition: background-color 0.3s ease;
 }
 
-/* .recipe-content * {
-    margin-top:20px;
-} */
-
-
-/* .home .recipe_card{
-    background-color:rgb(196, 221, 196);
-    border-color: darkgreen;
-} */
-
-/* .home .title, .home .content{
-    color: darkgreen;
-} */
-
 /* Bloody Mary css */
-body.bloody{
-    background-color: rgb(247, 218, 218);
+
+body.bloody {
+    background-color: rgb(209, 229, 209);
 }
 
-.bloody .container{
-    background-color: rgb(237, 181, 181);
-    border-color: darkred;
+.bloody .recipe-card {
+    background-color: #FFFAFA;
+    margin: 20px auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    border: 2px solid darkred; 
+    width: 1300px;
+    height: 700px;
 }
 
-.bloody .title{
+.bloody img{
+    height: 100%; /* Make the image height same as the parent div */
+    object-fit: cover; /* Maintain aspect ratio and cover the parent div */
+    object-position: top right;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bloody .title{ 
+    color: darkred;
+    margin-top: 15px;
+}
+
+.bloody ul, .bloody ol {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.bloody .recipe-content{
+    display: inline-block;
+    width: 690px;
+    vertical-align: top;
+    padding-left: 30px;
     color: darkgreen;
 }
 
-.bloody .content{
-    color:darkred;
-}
 
 /* Fried Shrimp css */
 body.shrimp{
