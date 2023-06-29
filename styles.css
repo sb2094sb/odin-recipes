@@ -165,14 +165,44 @@ body.shrimp{
 }
 
 /* Avocado Roll css */
-body.roll{
+
+body.roll {
     background-color: rgb(209, 229, 209);
 }
 
-.roll .container{
-    background-color:rgb(196, 221, 196);
-    border-color:rgb(221, 145, 2);
+.roll .recipe-card {
+    background-color: #FFFAFA;
+    margin: 20px auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    border: 2px solid rgb(221, 145, 2); 
+    height: 804px;
+    width: 1710px;
 }
-.roll .title, .roll .content{
+/* why does width 1704px not work? is there extra space being applied from the styles that I dont know about? */
+
+.roll img{
+    height: 100%; /* Make the image height same as the parent div */
+    width: 500px;
+    object-fit: cover; /* Maintain aspect ratio and cover the parent div */
+    object-position: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.roll .title{ 
     color: rgb(221, 145, 2);
+    margin-top: 15px;
+}
+
+.roll ul, .roll ol {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.roll .recipe-content{
+    display: inline-block;
+    width: 1200px;
+    vertical-align: top;
+    padding-left: 30px;
+    color: darkgreen;
 }
