@@ -152,15 +152,43 @@ body.bloody {
 
 
 /* Fried Shrimp css */
-body.shrimp{
+
+body.shrimp {
     background-color: rgb(239, 226, 151);
 }
 
-.shrimp .container{
-    background-color: rgb(241, 222, 118);
-    border-color: rgb(79, 70, 19);
+.shrimp .recipe-card {
+    background-color: #FFFAFA;
+    margin: 20px auto;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    border: 2px solid rgb(221, 145, 2); 
+    height: 600px;
+    width: 1430px;
 }
-.shrimp .title, .shrimp .content{
+.shrimp img{
+    height: 100%; /* Make the image height same as the parent div */
+    width: 500px;
+    object-fit: cover; /* Maintain aspect ratio and cover the parent div */
+    object-position: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.shrimp .title{ 
+    color: rgb(221, 145, 2);
+    margin-top: 15px;
+}
+
+.shrimp ul, .roll ol {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.shrimp .recipe-content{
+    display: inline-block;
+    width: 920px;
+    vertical-align: top;
+    padding-left: 30px;
     color:  rgb(79, 70, 19);
 }
 
